@@ -15,6 +15,45 @@ ORM框架：Mybatis
 前端框架：Bootstrap 、 jQuery 、 JSP
 
 # 功能模块介绍
+
+项目目录结构
+
+└───Education_System
+    ├───.idea
+    └───src
+        ├───main
+        │   ├───java
+        │   │   └───com
+        │   │       └───system
+        │   │           ├───controller
+        │   │           │   └───converter
+        │   │           ├───exception
+        │   │           ├───mapper
+        │   │           ├───po
+        │   │           ├───realm
+        │   │           └───service
+        │   │               └───impl
+        │   ├───resources
+        │   │   ├───mybatis
+        │   │   └───spring
+        │   └───webapp
+        │       ├───css
+        │       ├───fonts
+        │       ├───images
+        │       ├───js
+        │       └───WEB-INF
+        │           └───jsp
+        │               ├───admin
+        │               ├───student
+        │               └───teacher
+        └───test
+            └───java
+                └───com
+                    └───system
+                        ├───mapper
+                        └───service
+                            └───impl
+ 
 ### 1、登录模块功能
 使用Shiro权限管理框架，实现登录验证和登录信息的储存，根据不同的登录账户，分发权限角色，对不同页面url进行角色设置
 ![image](http://imgsrc.baidu.com/forum/pic/item/5a8d9e1c8701a18b1ea553e4942f07082938fead.jpg)
