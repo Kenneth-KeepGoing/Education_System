@@ -18,24 +18,6 @@ ORM框架：Mybatis
 
 项目目录结构
 
-└───Education_System
-
-    │   Educational_System.iml
-    │   pom.xml
-    │   README.md
-    │
-    ├───.idea
-    │       .gitignore
-    │       .name
-    │       compiler.xml
-    │       Educational_System.iml
-    │       encodings.xml
-    │       jarRepositories.xml
-    │       misc.xml
-    │       modules.xml
-    │       vcs.xml
-    │       workspace.xml
-    │
     └───src
         ├───main
         │   ├───java
