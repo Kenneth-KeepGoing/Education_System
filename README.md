@@ -17,42 +17,208 @@ ORM框架：Mybatis
 # 功能模块介绍
 
 项目目录结构
-└───Education_System
 
-    ├───.idea 
+└───Education_System
+    │   Educational_System.iml
+    │   pom.xml
+    │   README.md
+    │
+    ├───.idea
+    │       .gitignore
+    │       .name
+    │       compiler.xml
+    │       Educational_System.iml
+    │       encodings.xml
+    │       jarRepositories.xml
+    │       misc.xml
+    │       modules.xml
+    │       vcs.xml
+    │       workspace.xml
+    │
     └───src
         ├───main
         │   ├───java
         │   │   └───com
         │   │       └───system
         │   │           ├───controller
+        │   │           │   │   AdminController.java
+        │   │           │   │   LoginController.java
+        │   │           │   │   RestPasswordController.java
+        │   │           │   │   StudentController.java
+        │   │           │   │   TeacherController.java
+        │   │           │   │
         │   │           │   └───converter
+        │   │           │           CustomDateConverter.java
+        │   │           │
         │   │           ├───exception
+        │   │           │       CustomException.java
+        │   │           │       CustomExceptionResolver.java
+        │   │           │
         │   │           ├───mapper
+        │   │           │       CollegeMapper.java
+        │   │           │       CollegeMapper.xml
+        │   │           │       CourseMapper.java
+        │   │           │       CourseMapper.xml
+        │   │           │       CourseMapperCustom.java
+        │   │           │       CourseMapperCustom.xml
+        │   │           │       RoleMapper.java
+        │   │           │       RoleMapper.xml
+        │   │           │       SelectedcourseMapper.java
+        │   │           │       SelectedcourseMapper.xml
+        │   │           │       StudentMapper.java
+        │   │           │       StudentMapper.xml
+        │   │           │       StudentMapperCustom.java
+        │   │           │       StudentMapperCustom.xml
+        │   │           │       TeacherMapper.java
+        │   │           │       TeacherMapper.xml
+        │   │           │       TeacherMapperCustom.java
+        │   │           │       TeacherMapperCustom.xml
+        │   │           │       UserloginMapper.java
+        │   │           │       UserloginMapper.xml
+        │   │           │       UserloginMapperCustom.java
+        │   │           │       UserloginMapperCustom.xml
+        │   │           │
         │   │           ├───po
+        │   │           │       College.java
+        │   │           │       CollegeCustom.java
+        │   │           │       CollegeExample.java
+        │   │           │       Course.java
+        │   │           │       CourseCustom.java
+        │   │           │       CourseExample.java
+        │   │           │       PagingVO.java
+        │   │           │       Role.java
+        │   │           │       RoleExample.java
+        │   │           │       Selectedcourse.java
+        │   │           │       SelectedCourseCustom.java
+        │   │           │       SelectedcourseExample.java
+        │   │           │       Student.java
+        │   │           │       StudentCustom.java
+        │   │           │       StudentExample.java
+        │   │           │       Teacher.java
+        │   │           │       TeacherCustom.java
+        │   │           │       TeacherExample.java
+        │   │           │       Userlogin.java
+        │   │           │       UserloginCustom.java
+        │   │           │       UserloginExample.java
+        │   │           │
         │   │           ├───realm
+        │   │           │       LoginRealm.java
+        │   │           │
         │   │           └───service
+        │   │               │   CollegeService.java
+        │   │               │   CourseService.java
+        │   │               │   RoleService.java
+        │   │               │   SelectedCourseService.java
+        │   │               │   StudentService.java
+        │   │               │   TeacherService.java
+        │   │               │   UserloginService.java
+        │   │               │
         │   │               └───impl
+        │   │                       CollegeServiceImpl.java
+        │   │                       CourseServiceImpl.java
+        │   │                       RoleServiceImpl.java
+        │   │                       SelectedCourseServiceImpl.java
+        │   │                       StudentServiceImpl.java
+        │   │                       TeacherServiceImpl.java
+        │   │                       UserloginServiceImpl.java
+        │   │
         │   ├───resources
+        │   │   │   log4j.properties
+        │   │   │   mysql.properties
+        │   │   │
         │   │   ├───mybatis
+        │   │   │       mybatis.cfg.xml
+        │   │   │
         │   │   └───spring
+        │   │           applicationContext-dao.xml
+        │   │           applicationContext-service.xml
+        │   │           applicationContext-shiro.xml
+        │   │           applicationContext-trsaction.xml
+        │   │           springmvc.xml
+        │   │
         │   └───webapp
+        │       │   login.jsp
+        │       │
         │       ├───css
+        │       │       bootstrap-theme.css
+        │       │       bootstrap-theme.min.css
+        │       │       bootstrap.css
+        │       │       bootstrap.min.css
+        │       │
         │       ├───fonts
+        │       │       glyphicons-halflings-regular.eot
+        │       │       glyphicons-halflings-regular.svg
+        │       │       glyphicons-halflings-regular.ttf
+        │       │       glyphicons-halflings-regular.woff
+        │       │       glyphicons-halflings-regular.woff2
+        │       │
         │       ├───images
+        │       │       a.jpg
+        │       │
         │       ├───js
+        │       │       bootstrap.js
+        │       │       bootstrap.min.js
+        │       │       jquery-3.2.1.min.js
+        │       │       npm.js
+        │       │
         │       └───WEB-INF
+        │           │   web.xml
+        │           │
         │           └───jsp
+        │               │   error.jsp
+        │               │   success.jsp
+        │               │
         │               ├───admin
+        │               │       addCourse.jsp
+        │               │       addStudent.jsp
+        │               │       addTeacher.jsp
+        │               │       editCourse.jsp
+        │               │       editStudent.jsp
+        │               │       editTeacher.jsp
+        │               │       menu.jsp
+        │               │       passwordRest.jsp
+        │               │       showCourse.jsp
+        │               │       showStudent.jsp
+        │               │       showTeacher.jsp
+        │               │       top.jsp
+        │               │       userPasswordRest.jsp
+        │               │
         │               ├───student
+        │               │       menu.jsp
+        │               │       overCourse.jsp
+        │               │       passwordRest.jsp
+        │               │       selectCourse.jsp
+        │               │       showCourse.jsp
+        │               │       top.jsp
+        │               │
         │               └───teacher
+        │                       mark.jsp
+        │                       menu.jsp
+        │                       passwordRest.jsp
+        │                       showCourse.jsp
+        │                       showGrade.jsp
+        │                       top.jsp
+        │
         └───test
             └───java
                 └───com
                     └───system
                         ├───mapper
+                        │       CourseMapperCustomTest.java
+                        │       StudentMapperCustomTest.java
+                        │       StudentMapperTest.java
+                        │       TeacherMapperCustomTest.java
+                        │       UserloginMapperCustomTest.java
+                        │
                         └───service
                             └───impl
+                                    CourseServiceImplTest.java
+                                    SelectedCourseServiceImplTest.java
+                                    StudentServiceImplTest.java
+                                    TeacherServiceImplTest.java
+                                    UserloginServiceImplTest.java
+    
+    
  
 ### 1、登录模块功能
 使用Shiro权限管理框架，实现登录验证和登录信息的储存，根据不同的登录账户，分发权限角色，对不同页面url进行角色设置
