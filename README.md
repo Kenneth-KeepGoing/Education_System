@@ -19,9 +19,13 @@ ORM框架：Mybatis
 项目目录结构
 
 └───Education_System
+
     ├───.idea
+    
     └───src
+    
         ├───main
+        
         │   ├───java
         │   │   └───com
         │   │       └───system
