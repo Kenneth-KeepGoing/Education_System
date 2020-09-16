@@ -6,13 +6,17 @@ Web框架：SpringMVC
 
 ORM框架：Mybatis
 
-数据库: Mysql
+数据库:：Mysql
 
 安全框架：Shiro
 
 日志：log4j
 
 前端框架：Bootstrap 、 jQuery 、 JSP
+
+开发平台：Intellij IDEA 2020.1
+
+项目管理工具：Maven
 
 # 功能模块介绍
 
