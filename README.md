@@ -6,7 +6,7 @@ Web框架：SpringMVC
 
 ORM框架：Mybatis
 
-数据库:：Mysql
+数据库：Mysql
 
 安全框架：Shiro
 
