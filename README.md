@@ -17,9 +17,8 @@ ORM框架：Mybatis
 # 功能模块介绍
 
 项目目录结构
-
-
 └───Education_System
+
     ├───.idea 
     └───src
         ├───main
