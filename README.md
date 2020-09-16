@@ -12,7 +12,7 @@ ORM框架：Mybatis
 
 日志：log4j
 
-前端框架：Bootstrap
+前端框架：Bootstrap 、 jQuery 、 JSP
 
 # 功能模块介绍
 ### 1、登录模块功能
